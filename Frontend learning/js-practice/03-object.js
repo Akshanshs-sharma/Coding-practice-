@@ -52,3 +52,4 @@ console.log(order.items[2].productName)
 order.amount = order.items[0].price * order.items[0].quantity + order.items[1].price * order.items[1].quantity + order.items[2].price * order.items[2].quantity
 
 console.log(order)
+
