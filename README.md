@@ -3,9 +3,9 @@ I looked through the repo. This is not “plain JS frontend”; it is a **Vue 3 
 **Priority 0: What This App Is**
 1. This is a single page app, not many separate HTML pages.
 2. `index.html` loads the app.
-3. [src/main.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/main.ts) starts Vue, Ionic, Pinia, i18n, router, and mounts the app.
-4. [src/App.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/App.vue) is the root layout.
-5. [src/router/index.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/router/index.ts) decides which screen/page opens for each URL.
+3. `src/main.ts` starts Vue, Ionic, Pinia, i18n, router, and mounts the app.
+4. `src/App.vue` is the root layout.
+5. `src/router/index.ts` decides which screen/page opens for each URL.
 
 **Priority 1: JavaScript Basics**
 Learn these first, because they appear everywhere:
@@ -36,7 +36,7 @@ This repo uses TypeScript, so learn:
 6. Function return types
 7. Union types like `"idle" | "loading" | "loaded" | "error"`
 8. Generic-ish syntax you’ll see in Vue/Pinia
-9. Why files like [src/types/order.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/types/order.ts) exist
+9. Why files like `src/types/order.ts` exist
 
 Important folder: `src/types`.
 
@@ -51,7 +51,7 @@ Most UI files are `.vue` files. Learn the structure:
 6. Component events
 7. Slots
 
-Good file to study: [src/views/OrderSearch.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/views/OrderSearch.vue)
+Good file to study: `src/views/OrderSearch.vue`
 
 **Priority 4: Vue Template Syntax**
 Used everywhere in `.vue` files:
@@ -66,7 +66,7 @@ Used everywhere in `.vue` files:
 8. `:key` in lists
 9. `<slot />` for reusable components
 
-Example file: [src/components/common/SearchFilterCard.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/components/common/SearchFilterCard.vue)
+Example file: `src/components/common/SearchFilterCard.vue`
 
 **Priority 5: Vue Reactivity**
 This is core frontend logic in this repo:
@@ -122,7 +122,7 @@ This app has many pages:
 8. Redirects
 9. Permission checks through route metadata
 
-Main file: [src/router/index.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/router/index.ts)
+Main file: `src/router/index.ts`
 
 **Priority 8: Pinia Stores**
 This is one of the most important parts of the repo.
@@ -141,9 +141,9 @@ Learn:
 
 Important stores:
 
-1. [src/store/user.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/store/user.ts): login/user/profile/permissions
-2. [src/store/order.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/store/order.ts): order search and workflow queues
-3. [src/store/orderDetail.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/store/orderDetail.ts): full order detail screen data
+1. `src/store/user.ts`: login/user/profile/permissions
+2. `src/store/order.ts`: order search and workflow queues
+3. `src/store/orderDetail.ts`: full order detail screen data
 4. `src/store/customer.ts`: customer detail
 5. `src/store/orderTask.ts`: task queues
 6. `src/store/seed.ts`: reference data like statuses/enums/geo
@@ -173,8 +173,8 @@ Important folders:
 
 Good files:
 
-1. [src/services/order.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/services/order.ts)
-2. [src/composables/useOrderDetail.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/composables/useOrderDetail.ts)
+1. `src/services/order.ts`
+2. `src/composables/useOrderDetail.ts`
 3. `src/services/customer.ts`
 4. `src/services/OrderService.ts`
 
@@ -333,7 +333,7 @@ Learn after you understand app code:
 6. Environment variables: `import.meta.env`
 7. `vite.config.js`
 
-File: [vite.config.js](/home/akshansh/sandbox/accxui/apps/order-manager/vite.config.js)
+File: `vite.config.js`
 
 **Priority 19: Internationalization**
 The app uses translations.
@@ -410,14 +410,14 @@ Docs folder helps here, especially:
 
 If you want a practical path through this exact repo, start by reading these in order:
 
-1. [src/main.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/main.ts)
-2. [src/App.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/App.vue)
-3. [src/router/index.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/router/index.ts)
-4. [src/views/OrderSearch.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/views/OrderSearch.vue)
-5. [src/store/order.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/store/order.ts)
-6. [src/services/order.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/services/order.ts)
-7. [src/components/common/SearchFilterCard.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/components/common/SearchFilterCard.vue)
-8. [src/store/orderDetail.ts](/home/akshansh/sandbox/accxui/apps/order-manager/src/store/orderDetail.ts)
-9. [src/views/OrderDetail.vue](/home/akshansh/sandbox/accxui/apps/order-manager/src/views/OrderDetail.vue)
+1. `src/main.ts`
+2. `src/App.vue`
+3. `src/router/index.ts`
+4. `src/views/OrderSearch.vue`
+5. `src/store/order.ts`
+6. `src/services/order.ts`
+7. `src/components/common/SearchFilterCard.vue`
+8. `src/store/orderDetail.ts`
+9. `src/views/OrderDetail.vue`
 
 That path will teach you the app’s skeleton first, then one real feature end-to-end.
